@@ -10,6 +10,24 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="container">
+      <div class="navbar bg-info text-uppercase">
+        <h2>MEMBERS ONLY</h2>
+        <div class="btn-group">
+        <button class="btn btn-success">
+          <%= link_to "Sign In", new_user_session_path %>
+        </button>
+        <button class="btn btn-success">
+          <%= link_to "Sign Up", new_user_registration_path %>
+        </button>
+        <button class="btn btn-success">
+          <%= link_to "New Post", new_post_path %>
+        </button>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
