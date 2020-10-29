@@ -16,6 +16,10 @@
       <div class="navbar bg-info text-uppercase">
         <h2><%= link_to "MEMBERS ONLY", root_path %></h2>
         <% if user_signed_in? %>
+        <p class="btn">
+          <%= current_user.name %>
+        </p>
+
         <div class="btn-group">
           <button class="btn btn-success">
           <%= link_to "New Post", new_post_path %>
