@@ -15,31 +15,9 @@
     <div class="container">
       <div class="navbar bg-info text-uppercase">
         <h2><%= link_to "MEMBERS ONLY", root_path %></h2>
-        <% if user_signed_in? %>
         <div class="group">
-        <small>You are signed in as</small>
-        <small class="btn bg-warning">
-          <%= current_user.name %>
-        </small>
+        <%= check_user %>
         </div>
-        <div class="btn-group">
-          <button class="btn btn-success">
-          <%= link_to "New Post", new_post_path %>
-        </button>
-        <button class="btn btn-success">
-          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-        </button>
-        </div>
-        <% else %>
-        <div class="btn-group">
-        <button class="btn btn-success">
-          <%= link_to "Sign In", new_user_session_path %>
-        </button>
-        <button class="btn btn-success">
-          <%= link_to "Sign Up", new_user_registration_path %>
-        </button>
-        </div>
-        <% end %>
       </div>
     </div>
     <%= yield %>

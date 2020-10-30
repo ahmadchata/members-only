@@ -8,11 +8,9 @@
     <div class="card-body">
     <blockquote class="blockquote mb-0">
       <p><%= post.body %></p>
-      <% if user_signed_in? %>
       <footer class="blockquote-footer">
-        <small><%= post.user.name %></small>
+        <%= show_name(post) %>
       </footer>
-      <% end %>
     </blockquote>
   </div>
   <% end %>
