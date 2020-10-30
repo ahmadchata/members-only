@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="container">
+      <div class="navbar bg-info text-uppercase">
+        <h2><%= link_to "MEMBERS ONLY", root_path %></h2>
+        <div class="group">
+        <%= check_user %>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
