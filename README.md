@@ -45,7 +45,7 @@ $ rails db:migrate
 ## ✒️  Authors <a name = "author"></a>
 
 
-👤 **Dipesh Kumar**
+👤 **Ahmad Chata**
 
 - Github: [Ahmad Chata](https://github.com/ahmadchata)
 - Twitter: [@ahmadchata](https://twitter.com/ahmadchata)
