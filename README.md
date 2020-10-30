@@ -41,6 +41,17 @@ $ yarn install --check-files
 $ rails db:migrate
 ~~~
 
+If you get an error installing dependencies:
+
+Change ruby version in Gemfile from 2.7.2 to version installed on your system
+
+then run
+
+```
+$ bundle install
+$ yarn install --check-files
+```
+
 
 ## ✒️  Authors <a name = "author"></a>
 
