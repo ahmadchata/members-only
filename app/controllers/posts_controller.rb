@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all.order("created_at DESC")
+    @posts = Post.all.order('created_at DESC')
   end
 
   def new
@@ -8,8 +8,8 @@ class PostsController < ApplicationController
   end
 
   def create
-  @post = current_user.posts.build(posts_params)
-  if @post.save
+    @post = current_user.posts.build(posts_params)
+    if @post.save
       flash[:notice] = 'Post was created successfully'
       redirect_to posts_path
     else
